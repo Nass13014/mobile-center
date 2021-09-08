@@ -1,0 +1,26 @@
+<ul>
+  <% if administrateur_signed_in? %>
+    <li>
+      <%= link_to "Sign out", destroy_administrateur_session_path, method: :delete %>
+    </li>
+
+    <li>
+      Voici ton email : <%= current_administrateur.email %>
+    </li>
+
+ 
+    <li>
+      <%= link_to "Edit email / password", edit_administrateur_registration_path %>
+    </li>
+
+  <% else %>
+    <li>    
+      <%= link_to "Sign in", new_administrateur_session_path %>
+    </li>
+
+    <li>
+      <%= link_to "Sign up", new_administrateur_registration_path %>
+    </li>
+
+  <% end %>
+</ul>

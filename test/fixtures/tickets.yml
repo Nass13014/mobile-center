@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  raisonSocial: MyString
+  nom: MyString
+  prenom: MyString
+  numero: 1
+  mail: MyString
+  modele: MyString
+  imei: 1
+  motdepass: MyString
+  panne: MyString
+  remarque: MyText
+  total: MyString
+  accompte: MyString
+  reduction: MyString
+  garantie: MyString
+
+two:
+  raisonSocial: MyString
+  nom: MyString
+  prenom: MyString
+  numero: 1
+  mail: MyString
+  modele: MyString
+  imei: 1
+  motdepass: MyString
+  panne: MyString
+  remarque: MyText
+  total: MyString
+  accompte: MyString
+  reduction: MyString
+  garantie: MyString

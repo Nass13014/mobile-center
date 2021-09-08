@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tickets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Raisonsocial</th>
+      <th>Nom</th>
+      <th>Prenom</th>
+      <th>Numero</th>
+      <th>Mail</th>
+      <th>Modele</th>
+      <th>Imei</th>
+      <th>Motdepass</th>
+      <th>Panne</th>
+      <th>Remarque</th>
+      <th>Total</th>
+      <th>Accompte</th>
+      <th>Reduction</th>
+      <th>Garantie</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tickets.each do |ticket| %>
+      <tr>
+        <td><%= ticket.raisonSocial %></td>
+        <td><%= ticket.nom %></td>
+        <td><%= ticket.prenom %></td>
+        <td><%= ticket.numero %></td>
+        <td><%= ticket.mail %></td>
+        <td><%= ticket.modele %></td>
+        <td><%= ticket.imei %></td>
+        <td><%= ticket.motdepass %></td>
+        <td><%= ticket.panne %></td>
+        <td><%= ticket.remarque %></td>
+        <td><%= ticket.total %></td>
+        <td><%= ticket.accompte %></td>
+        <td><%= ticket.reduction %></td>
+        <td><%= ticket.garantie %></td>
+        <td><%= link_to 'Afficher', ticket %></td>
+        <td><%= link_to 'Modifier', edit_ticket_path(ticket) %></td>
+        <td><%= link_to 'Supprimer', ticket, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Créer un nouveau ticket', new_ticket_path %>

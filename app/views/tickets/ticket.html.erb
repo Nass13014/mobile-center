@@ -1,0 +1,144 @@
+
+
+   <%= image_tag "http://static.wixstatic.com/media/12d462_c75886e9f8524a6ead37a4cf72987ffb~mv2.png/v1/fill/w_119,h_35,al_c,q_95/Logo%20vectowhite.webp" %>
+
+
+<div class="left"> 
+
+<h4>
+  <strong>Ticket numéro :  <%= @ticket.id %> </strong>
+  
+</h4>   
+
+
+<h4>
+  <strong>Date  :  <%= @ticket.created_at.to_formatted_s(:short)  %> </strong>
+
+</h4>
+
+<h4>
+  <strong>Raison sociale:</strong>
+  <%= @ticket.raisonSocial %> <br> 
+
+  
+
+  <strong>Numero de téléphone :</strong>
+  <%= @ticket.numero %>
+</h4>
+
+</div>
+
+<div class="centre">  
+
+<h2>Appareil </h2>
+
+<p>
+  <strong>Modele:</strong>
+  <%= @ticket.modele %>
+  </p>
+
+  <p>
+  
+  <strong>Imei:</strong>
+  <%= @ticket.imei %>
+
+  <br>
+</p>
+
+<p>
+  <strong>Mot de passe :</strong>
+  <%= @ticket.motdepass %>
+  <br>
+</p>
+
+<p>
+  <strong>Panne :</strong>
+  <%= @ticket.panne %>
+  <br>
+</p>
+
+<p>
+  <strong>Remarque :</strong>
+  <%= @ticket.remarque %>
+  <br>
+</p>
+
+<p>
+  <strong>Garantie:</strong>
+  <%= @ticket.garantie %>
+  <br>
+</p>
+
+</div>
+
+  <div class="footer">
+
+<p>
+  <strong>Total:</strong>
+  <%= @ticket.total %>
+</p>
+
+<p>
+  <strong>Accompte:</strong>
+  <%= @ticket.accompte %>
+</p>
+
+<p>
+  <strong>Reduction:</strong>
+  <%= @ticket.reduction %>
+</p>
+
+
+
+<hr>
+
+  </div>
+
+
+
+<p style='page-break-after:always;'></p>
+
+
+<div class="page2"> 
+
+  <h2>Mobile-CENTER -
+
+  <strong>Ticket numéro :  <%= @ticket.id %> </strong> </h2>
+
+</div>
+
+   
+
+
+
+<p>
+  <strong>Date de création du ticket :  <%= @ticket.created_at.to_formatted_s(:short)  %> </strong>
+
+</p>
+
+<p>
+  <strong>Nom:</strong>
+  <%= @ticket.nom %>
+</p>
+
+<p>
+  <strong>Prenom:</strong>
+  <%= @ticket.prenom %>
+</p>
+
+
+<p>
+  <strong>Panne:</strong>
+  <%= @ticket.panne %>
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+

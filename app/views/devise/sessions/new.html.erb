@@ -1,0 +1,38 @@
+<div class="container-fluid"> </div>
+
+
+<div class="row"> 
+
+<div class="column text-center mt-5 text-white"> 
+<h2 class="text-white">AUTHENTIFICATION</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.label :email, "E-mail" %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"rounded-pill" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password, "Mot de passe" %><br />
+    <%= f.password_field :password, autocomplete: "current-password", class:"rounded-pill" %>
+  </div>
+
+  <% if devise_mapping.rememberable? %>
+    <div class="field">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me, "Se souvenir de moi", class:"mt-2" %>
+    </div>
+  <% end %>
+
+  <div class="actions mt-4">
+    <%= f.submit "Se connecter", class:"btn btn-danger rounded-pill", style: "background-color: rgba(178,29,94);"  %>
+  </div>
+<% end %>
+
+
+
+</div>
+
+</div>
+
+</div>
