@@ -8,6 +8,19 @@
   align-items:right;
 } */
 
+/* .global1 {
+  width:70mm;
+  height:12mm;
+}
+
+.global2 {
+  width:38mm;
+  height:25mm;
+} */
+
+h3 {
+  text-align:right;
+}
 
 .logo {
   height:50px;
@@ -23,12 +36,7 @@
 }
 </style>
 
-<div class="parent-logo">
-
-<%= image_tag wicked_pdf_asset_base64('logo.jpg'), class: "logo"%>
-
-
-</div>
+<div class="global1">
 
 
 <div class="left"> 
@@ -103,17 +111,22 @@
 
 <p>
   <strong>Total:</strong>
-  <%= @ticket.total %>
+  <%= @ticket.total %>€
 </p>
 
 <p>
   <strong>Accompte:</strong>
-  <%= @ticket.accompte %>
+  <%= @ticket.accompte  %>€
 </p>
 
 <p>
   <strong>Reduction:</strong>
-  <%= @ticket.reduction %>
+  <%= @ticket.reduction %>€
+</p>
+
+<p>
+  <strong>Total à payer:</strong>
+  <%= @ticket.total - @ticket.accompte %>€
 </p>
 
 
@@ -122,15 +135,15 @@
 
   </div>
 
-
+  </div>
 
 <p style='page-break-after:always;'></p>
 
 
+<div class="global2">
 
-
-  <h3> <%= image_tag wicked_pdf_asset_base64('logo.jpg'), class: "logo2"%>  
-    Ticket numéro :  <%= @ticket.id %> </h3> 
+ 
+  <h3>   Ticket numéro :  <%= @ticket.id %> </h3> 
 
  
 
@@ -210,18 +223,25 @@
 
 <p>
   <strong>Total:</strong>
-  <%= @ticket.total %>
+  <%= @ticket.total %>€
 </p>
 
 <p>
   <strong>Accompte:</strong>
-  <%= @ticket.accompte %>
+  <%= @ticket.accompte  %>€
 </p>
 
 <p>
   <strong>Reduction:</strong>
-  <%= @ticket.reduction %>
+  <%= @ticket.reduction %>€
 </p>
+
+<p>
+  <strong>Total à payer:</strong>
+  <%= @ticket.total - @ticket.accompte %>€
+</p>
+
+  </div>
 
   </div>
 

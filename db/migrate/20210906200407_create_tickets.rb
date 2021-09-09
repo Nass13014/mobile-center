@@ -11,10 +11,12 @@ class CreateTickets < ActiveRecord::Migration[5.2]
       t.string :motdepass
       t.string :panne
       t.text :remarque
-      t.string :total
-      t.string :accompte
-      t.string :reduction
+      t.integer :total
+      t.integer :accompte
+      t.integer :reduction
       t.string :garantie
+      t.string :statut
+      t.string :paye
 
       t.timestamps
     end

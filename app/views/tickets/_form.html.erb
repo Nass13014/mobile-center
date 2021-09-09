@@ -113,21 +113,23 @@
     <%= form.text_field :reduction,  style: "background-color: #1d4043;",class: "text"  %>
   </div>
 
+   <div class="field field d-flex flex-column">
+    <%= form.label :statut, "Status" %>
+    <%= form.select :statut, ['Réceptionné', 'En cours de réparation', 'Réparé'],  style: "background-color: #1d4043;",class: "text"  %>
+  </div>
+
+    <div class="field field d-flex flex-column">
+    <%= form.label :paye, "Paiement" %>
+    <%= form.select :paye, ['En attende de paiement', 'Accompte Réglé', 'Total Réglé'],  style: "background-color: #1d4043;",class: "text"  %>
+  </div>
+
+
   <div class="field field d-flex flex-column">
     <%= form.label :garantie, "Garantie" %>
     <%= form.select :garantie, ['0', '6 mois', '12 mois'],  style: "background-color: #1d4043;",class: "text"  %>
   </div>
 
-   <div class="field field d-flex flex-column">
-    <%= form.label :status, "Status" %>
-    <%= form.select :garantie, ['Réceptionné', 'En cours de réparation', 'Réparé'],  style: "background-color: #1d4043;",class: "text"  %>
-  </div>
-
-    <div class="field field d-flex flex-column">
-    <%= form.label :Paiement, "Paiement" %>
-    <%= form.select :garantie, ['En attende de paiement', 'Accompte Réglé', 'Total Réglé'],  style: "background-color: #1d4043;",class: "text"  %>
-  </div>
-
+  
   </div>
 
   <div class="actions">
