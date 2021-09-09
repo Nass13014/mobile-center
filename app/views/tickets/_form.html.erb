@@ -13,31 +13,52 @@
 
   <div class="d-flex flex-column m-4">
 
+  <style>
+    h2 {
+      font-size: 14px;
+    }
+
+    .valider {
+      font-size: 14px;
+    }
+
+    .field {
+      font-size:12px;
+    }
+
+    .text {
+      border-radius: 10px;
+      color:#88c4c9;
+    }
+
+    
+  </style>
+
     <h2> Client </h2>
 
   <div class="field d-flex flex-column">
     <%= form.label :raisonSocial %>
-    <%= form.text_field :raisonSocial %>
+    <%= form.text_field :raisonSocial, style: "background-color: #1d4043;", class: "text" %>
   </div>
 
   <div class="field field d-flex flex-column">
     <%= form.label :nom %>
-    <%= form.text_field :nom %>
+    <%= form.text_field :nom, style: "background-color: #1d4043;",class: "text" %>
   </div>
 
   <div class="field field d-flex flex-column">
     <%= form.label :prenom %>
-    <%= form.text_field :prenom %>
+    <%= form.text_field :prenom,  style: "background-color: #1d4043;",class: "text" %>
   </div>
 
   <div class="field field d-flex flex-column">
     <%= form.label :numero %>
-    <%= form.number_field :numero %>
+    <%= form.number_field :numero,  style: "background-color: #1d4043;",class: "text" %>
   </div>
 
   <div class="field field d-flex flex-column">
     <%= form.label :mail %>
-    <%= form.text_field :mail %>
+    <%= form.text_field :mail,  style: "background-color: #1d4043;",class: "text"  %>
   </div>
 
   </div>
@@ -48,27 +69,27 @@
 
   <div class="field field d-flex flex-column">
     <%= form.label :modele, "Modèle du mobile" %>
-    <%= form.text_field :modele %>
+    <%= form.text_field :modele,  style: "background-color: #1d4043;",class: "text"  %>
   </div>
 
   <div class="field field d-flex flex-column">
     <%= form.label :imei, "IMEI" %>
-    <%= form.number_field :imei %>
+    <%= form.number_field :imei,  style: "background-color: #1d4043;",class: "text"  %>
   </div>
 
   <div class="field field d-flex flex-column">
     <%= form.label :motdepass, "Mot de passe du téléphone" %>
-    <%= form.text_field :motdepass %>
+    <%= form.text_field :motdepass,  style: "background-color: #1d4043;",class: "text"  %>
   </div>
 
   <div class="field field d-flex flex-column">
     <%= form.label :panne, "Type de Panne" %>
-    <%= form.select :panne, ['Ecran','Vitre arrière ','Batterie', 'HP interne', 'HP externe', 'micro', 'bouton on/off', 'Volume', 'Autre ..'] %>
+    <%= form.select :panne, ['Ecran','Vitre arrière ','Batterie', 'HP interne', 'HP externe', 'micro', 'bouton on/off', 'Volume', 'Autre ..'],  style: "background-color: #1d4043;",class: "text"  %>
   </div>
 
   <div class="field field d-flex flex-column">
     <%= form.label :remarque, "Remarque" %>
-    <%= form.text_area :remarque %>
+    <%= form.text_area :remarque,  style: "background-color: #1d4043;",class: "text"  %>
   </div>
 
   </div>
@@ -79,38 +100,38 @@
 
   <div class="field field d-flex flex-column">
     <%= form.label :total, "Total" %>
-    <%= form.text_field :total %>
+    <%= form.text_field :total,  style: "background-color: #1d4043;",class: "text"  %>
   </div>
 
   <div class="field field d-flex flex-column">
     <%= form.label :accompte, "Accompte" %>
-    <%= form.text_field :accompte %>
+    <%= form.text_field :accompte,  style: "background-color: #1d4043;",class: "text"  %>
   </div>
 
   <div class="field field d-flex flex-column">
     <%= form.label :reduction, "Réduction" %>
-    <%= form.text_field :reduction %>
+    <%= form.text_field :reduction,  style: "background-color: #1d4043;",class: "text"  %>
   </div>
 
   <div class="field field d-flex flex-column">
     <%= form.label :garantie, "Garantie" %>
-    <%= form.select :garantie, ['0', '6 mois', '12 mois'] %>
+    <%= form.select :garantie, ['0', '6 mois', '12 mois'],  style: "background-color: #1d4043;",class: "text"  %>
   </div>
 
    <div class="field field d-flex flex-column">
     <%= form.label :status, "Status" %>
-    <%= form.select :garantie, ['Réceptionné', 'En cours de réparation', 'Réparé'] %>
+    <%= form.select :garantie, ['Réceptionné', 'En cours de réparation', 'Réparé'],  style: "background-color: #1d4043;",class: "text"  %>
   </div>
 
     <div class="field field d-flex flex-column">
     <%= form.label :Paiement, "Paiement" %>
-    <%= form.select :garantie, ['En attende de paiement', 'Accompte Réglé', 'Total Réglé'] %>
+    <%= form.select :garantie, ['En attende de paiement', 'Accompte Réglé', 'Total Réglé'],  style: "background-color: #1d4043;",class: "text"  %>
   </div>
 
   </div>
 
   <div class="actions">
    
-    <%= form.submit value:"Créer un ticket", class:"btn btn-danger",style: "background-color: rgba(178,29,94);" %>
+    <%= form.submit value:"Créer un ticket", class:"btn btn-danger valider",style: "background-color: #ff0066;" %>
   </div>
 <% end %>

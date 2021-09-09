@@ -1,6 +1,34 @@
+<style>
+
+/* .parent-logo {
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:right;
+  align-items:right;
+} */
 
 
-   <%= image_tag "http://static.wixstatic.com/media/12d462_c75886e9f8524a6ead37a4cf72987ffb~mv2.png/v1/fill/w_119,h_35,al_c,q_95/Logo%20vectowhite.webp" %>
+.logo {
+  height:50px;
+  padding-left:80%;
+
+}
+
+.logo2 {
+  height:50px;
+  padding-left:20%;
+
+
+}
+</style>
+
+<div class="parent-logo">
+
+<%= image_tag wicked_pdf_asset_base64('logo.jpg'), class: "logo"%>
+
+
+</div>
 
 
 <div class="left"> 
@@ -99,23 +127,25 @@
 <p style='page-break-after:always;'></p>
 
 
-<div class="page2"> 
 
-  <h2>Mobile-CENTER -
 
-  <strong>Ticket numéro :  <%= @ticket.id %> </strong> </h2>
+  <h3> <%= image_tag wicked_pdf_asset_base64('logo.jpg'), class: "logo2"%>  
+    Ticket numéro :  <%= @ticket.id %> </h3> 
 
-</div>
+ 
+
+
 
    
 
 
 
-<p>
-  <strong>Date de création du ticket :  <%= @ticket.created_at.to_formatted_s(:short)  %> </strong>
+<h3 style="text-align:right;">
+  Date :  <%= @ticket.created_at.to_formatted_s(:short)  %>
 
-</p>
+</h3>
 
+<div class="middle">
 <p>
   <strong>Nom:</strong>
   <%= @ticket.nom %>
@@ -126,15 +156,76 @@
   <%= @ticket.prenom %>
 </p>
 
+<p>
+  <strong>Numéro :</strong>
+  <%= @ticket.numero %>
+</p>
+
+<p>
+  <strong>Mail :</strong>
+  <%= @ticket.mail %>
+</p>
+
+</div>
+
+<div class="end">
+
+<p>
+  <strong>Modèle :</strong>
+  <%= @ticket.modele %>
+</p>
+
+<p>
+  <strong>IMEI :</strong>
+  <%= @ticket.imei %>
+</p>
+
+<p>
+  <strong>PIN :</strong>
+  <%= @ticket.motdepass %>
+</p>
+
+
 
 <p>
   <strong>Panne:</strong>
   <%= @ticket.panne %>
 </p>
 
+<p>
+  <strong>Remarque :</strong>
+  <%= @ticket.remarque %>
+</p>
+
+<p>
+  <strong>Garantie :</strong>
+  <%= @ticket.garantie %>
+</p>
 
 
 </div>
+
+
+  <div class="price">
+
+<p>
+  <strong>Total:</strong>
+  <%= @ticket.total %>
+</p>
+
+<p>
+  <strong>Accompte:</strong>
+  <%= @ticket.accompte %>
+</p>
+
+<p>
+  <strong>Reduction:</strong>
+  <%= @ticket.reduction %>
+</p>
+
+  </div>
+
+
 
 
 

@@ -27,7 +27,11 @@ class TicketsController < ApplicationController
       format.html
       format.pdf do
        
-        render :pdf => "TicketReparation", template: "tickets/ticket.html.erb", layout: "pdf",formats: :HTML, 
+        render :pdf => "TicketReparation",
+         template: "tickets/ticket.html.erb",
+        layout: "pdf",
+        page_size: 'A4',
+        formats: :HTML, 
         encoding: 'utf8'
       end
 
