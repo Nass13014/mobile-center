@@ -13,7 +13,6 @@
 #   layout: "pdf.html.erb"
 # })
 
-
 # wkhtml2pdf Ruby interface
 # http://code.google.com/p/wkhtmltopdf/
 
