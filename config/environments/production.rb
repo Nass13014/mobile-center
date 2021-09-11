@@ -14,11 +14,11 @@ Rails.application.configure do
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
 
-  config.after_initialize do
-	  WickedPdf.config = {
-	  	:exe_path => "/usr/local/bin/wkhtmltopdf"
-	  	}
-	end
+  # config.after_initialize do
+	#   WickedPdf.config = {
+	#   	:exe_path => "/usr/local/bin/wkhtmltopdf-amd64"
+	#   	}
+	# end
 
 
   # Ensures that a master key has been made available in either ENV["RAILS_MASTER_KEY"]
