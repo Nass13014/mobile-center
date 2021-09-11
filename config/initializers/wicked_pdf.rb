@@ -8,7 +8,7 @@
 #
 # https://github.com/mileszs/wicked_pdf/blob/master/README.md
 
-WickedPdf.config = {
-  exe_path: '/usr/local/bin/wkhtmltopdf',
-  enable_local_file_access: true
-}
+WickedPdf.config ||= {}
+WickedPdf.config.merge!({
+  layout: "pdf.html.erb"
+})
