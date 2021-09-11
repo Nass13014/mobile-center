@@ -10,8 +10,8 @@ gem 'rails', '~> 5.2.6'
 gem 'devise'
 
 gem 'wicked_pdf'
-gem "wkhtmltopdf-binary"
-# gem "wkhtmltopdf-heroku"
+gem "wkhtmltopdf-binary",
+gem "wkhtmltopdf-heroku", group: :production
 
 
 
