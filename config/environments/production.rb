@@ -16,7 +16,7 @@ Rails.application.configure do
 
   config.after_initialize do
 	  WickedPdf.config = {
-	  	:exe_path => "/usr/local/bin/wkhtmltopdf"
+	  	:exe_path => "/usr/local/bin/wkhtmltopdf-amd64"
 	  	}
 	end
 
