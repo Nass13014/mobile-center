@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
+  devise_for :admins
   resources :tickets
 
   get 'tickets/bon_reparation', :to => 'tickets#bon_reparation'
-  devise_for :administrateurs
 
 
 
