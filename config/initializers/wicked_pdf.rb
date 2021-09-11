@@ -16,10 +16,6 @@
 
 # WickedPdf.config = { exe_path: wkhtmltopdf_path, wkhtmltopdf: wkhtmltopdf_path }
 
-require 'wicked_pdf_railtie'
-require 'wicked_pdf_tempfile'
-
-class WickedPdf
   @@config = {
 #  	:exe_path => "/usr/local/bin/wkhtmltopdf"
   	:exe_path => Rails.root.join('bin', 'wkhtmltopdf-amd64').to_s
@@ -171,4 +167,3 @@ class WickedPdf
       end
     end
 
-end
