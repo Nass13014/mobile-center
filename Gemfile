@@ -11,7 +11,7 @@ gem 'devise'
 
 gem 'wicked_pdf'
 gem "wkhtmltopdf-binary", group: :development
-gem 'wkhtmltopdf-heroku', '2.12.6.0', group: :production
+gem 'wkhtmltopdf-heroku',group: :production
 
 
 
