@@ -8,7 +8,6 @@
 #
 # https://github.com/mileszs/wicked_pdf/blob/master/README.md
 
-WickedPdf.config ||= {}
-WickedPdf.config.merge!({
-  layout: "pdf.html.erb"
-})
+WickedPdf.config = {
+  :exe_path => Rails.root.join('bin', 'wkhtmltopdf-amd64').to_s,
+}
