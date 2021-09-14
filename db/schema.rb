@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 2021_09_11_113223) do
     t.string "imei"
     t.string "motdepass"
     t.string "panne"
+    t.string "delai"
     t.text "remarque"
     t.integer "total"
     t.integer "accompte"

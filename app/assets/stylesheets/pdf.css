@@ -1,7 +1,11 @@
+body {
+    font-size: 12px;
+}
+
 .page2 {
     width: 100%;
     display:inline-flex;
-    text-align: right;
+
 
 
     
@@ -12,7 +16,7 @@
 .left {
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
+    
     
     
 }
@@ -49,9 +53,9 @@ h4 {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    text-align: right;
+     text-align: right;
     width: 100%;
-    margin-top: 25%;
+    margin-top: 20%;
     margin-right: 5%;
     border-radius: 16px;
 
@@ -66,16 +70,22 @@ hr {
     border: 1px solid black;
     border-radius: 16px;
     margin-top: 100px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
 }
 
 .middle p {
-    margin-left: 15px;
+    
 }
 
 .end {
     border: 1px solid black;
     border-radius: 16px;
-    margin-top: 60px;
+    /* margin-top: 60px; */
+    text-align: center;
+    width: 50%;
+    margin: 10px auto;
 }
 
 .end p {
@@ -86,12 +96,53 @@ hr {
 .price {
     display:flex;
     flex-direction: column;
-    justify-content: flex-end;
+     justify-content: flex-end;
     align-items: flex-end;
-    text-align: right;
+    text-align: right; 
     width: 100%;
     margin-right: 5%;
     margin-top: 100px;
+    border-radius: 16px;
+
+}
+
+
+.depot {
+    text-align:center;
+    width: 100%;
+}
+
+.depot2 {
+    text-align:center;
+    width: 100%;
+}
+
+
+.entete {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.toto {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+
+.price2 {
+    display:flex;
+    flex-direction: column;
+     justify-content: center;
+    align-items: center;
+    text-align: center; 
+    width: 100%;
+    margin-right: 5%;
+    margin-top: 30px;
     border-radius: 16px;
 
 }

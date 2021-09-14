@@ -111,23 +111,24 @@ h3 {
 
 <p>
   <strong>Total:</strong>
-  <%= @ticket.total %>€
+  <%= @ticket.total %> €
 </p>
 
 <p>
   <strong>Accompte:</strong>
-  <%= @ticket.accompte  %>€
+  <%= @ticket.accompte  %> €
 </p>
 
 <p>
   <strong>Reduction:</strong>
-  <%= @ticket.reduction %>€
+  <%= @ticket.reduction %> €
 </p>
 
 <p>
   <strong>Total à payer:</strong>
-  <%= @ticket.total - @ticket.accompte %>€
+  <%= @ticket.total - @ticket.accompte %> €
 </p>
+
 
 
 
@@ -137,28 +138,61 @@ h3 {
 
   </div>
 
-<p style='page-break-after:always;'></p>
-
-
-<div class="global2">
-
- 
-  <h3>   Ticket numéro :  <%= @ticket.id %> </h3> 
-
- 
+  
 
 
 
-   
+
+  
+
+  <div class="text-center depot d-flex justify-content-center align-items-center">
+  <p class="text-center"> Preuve de dépôt à conserver </p> 
+
+<p>
+  MOBILE FRANCE 13 RUE DE BELFORT 71100 CHALON-SUR-SAÔNE
+Tel : +33 9 83 03 72 94 Port. : +33 7 67 00 32 33 
+contact@mobilecenter.fr N° SIRET : 89490645200012 Capital : 3 000 €
+TVA non applicable - article 293 B du CGI 
+Garantie (hors casse et oxydation)
+
+ </p>
 
 
 
-<h3 style="text-align:right;">
+ </div>
+
+ </div>
+
+<%# <p style='page-break-after:always;'></p> %>
+
+
+
+
+
+
+
+  
+
+
+<div class="toto">
+
+  <strong> Ticket numéro :  <%= @ticket.id %> </strong>
+
+
+<br> <br>
   Date :  <%= @ticket.created_at.to_formatted_s(:short)  %>
 
-</h3>
+
+
+</div>
+
+
+
 
 <div class="middle">
+
+
+
 <p>
   <strong>Nom:</strong>
   <%= @ticket.nom %>
@@ -194,7 +228,7 @@ h3 {
 </p>
 
 <p>
-  <strong>PIN :</strong>
+  <strong>Mot de passe :</strong>
   <%= @ticket.motdepass %>
 </p>
 
@@ -215,35 +249,53 @@ h3 {
   <%= @ticket.garantie %>
 </p>
 
-
 </div>
 
 
-  <div class="price">
+
+<div class="price2">
 
 <p>
   <strong>Total:</strong>
-  <%= @ticket.total %>€
+  <%= @ticket.total %> €
 </p>
 
 <p>
   <strong>Accompte:</strong>
-  <%= @ticket.accompte  %>€
+  <%= @ticket.accompte  %> €
 </p>
 
 <p>
   <strong>Reduction:</strong>
-  <%= @ticket.reduction %>€
+  <%= @ticket.reduction %> €
 </p>
 
 <p>
   <strong>Total à payer:</strong>
-  <%= @ticket.total - @ticket.accompte %>€
+  <%= @ticket.total - @ticket.accompte %> €
 </p>
 
-  </div>
+ <div class="text-center depot d-flex justify-content-center align-items-center">
+  <hr>
 
-  </div>
+<p>
+  MOBILE FRANCE 13 RUE DE BELFORT 71100 CHALON-SUR-SAÔNE
+Tel : +33 9 83 03 72 94 Port. : +33 7 67 00 32 33 
+contact@mobilecenter.fr N° SIRET : 89490645200012 Capital : 3 000 €
+TVA non applicable - article 293 B du CGI 
+Garantie (hors casse et oxydation)
+
+ </p>
+
+
+
+ </div>
+  
+</div>
+
+
+
+
 
 
 

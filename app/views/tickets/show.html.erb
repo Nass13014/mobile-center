@@ -8,7 +8,7 @@
 </p>
 
 <p>
-  <strong>Raisonsocial:</strong>
+  <strong>Raison sociale :</strong>
   <%= @ticket.raisonSocial %>
 </p>
 
@@ -53,7 +53,13 @@
 </p>
 
 <p>
-  <strong>Remarque:</strong>
+  <strong>Délai :</strong>
+  <%= @ticket.delai %>
+</p>
+
+<p>
+  <strong>Remarque :</strong>
+  
   <%= @ticket.remarque %>
 </p>
 
@@ -89,7 +95,7 @@
 
 <%= link_to 'Modifier', edit_ticket_path(@ticket), class: "btn btn-danger text-white m-2", style: "background-color: rgba(178,29,94);"  %> 
 <%= link_to 'Retour', tickets_path, class: "btn btn-danger text-white m-2", style: "background-color: rgba(178,29,94);"  %>
-<%= link_to "Convertir en PDF", ticket_path(format: :pdf), class: "btn btn-danger text-white m-2", style: "background-color: rgba(178,29,94);"  %>
+<%= link_to "PDF", ticket_path(format: :pdf), class: "btn btn-danger text-white m-2", style: "background-color: rgba(178,29,94);"  %>
 
 
 

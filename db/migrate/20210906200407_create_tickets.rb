@@ -11,6 +11,7 @@ class CreateTickets < ActiveRecord::Migration[5.2]
       t.string :imei
       t.string :motdepass
       t.string :panne
+      t.string :delai
       t.text :remarque
       t.integer :total
       t.integer :accompte
