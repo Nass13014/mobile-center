@@ -126,7 +126,7 @@ h3 {
 
 <p>
   <strong>Total à payer:</strong>
-  <%= @ticket.total - @ticket.accompte %> €
+  <%= @ticket.total - @ticket.accompte - @ticket.reduction %> €
 </p>
 
 
@@ -272,7 +272,7 @@ Garantie (hors casse et oxydation)
 
 <p>
   <strong>Total à payer:</strong>
-  <%= @ticket.total - @ticket.accompte %> €
+  <%= @ticket.total - @ticket.accompte - @ticket.reduction %> €
 </p>
 
  <div class="text-center depot d-flex justify-content-center align-items-center">
