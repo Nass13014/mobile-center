@@ -1,13 +1,14 @@
 class CreateTickets < ActiveRecord::Migration[5.2]
   def change
     create_table :tickets do |t|
+      t.string :createur
       t.string :raisonSocial
       t.string :nom
       t.string :prenom
       t.integer :numero
       t.string :mail
       t.string :modele
-      t.integer :imei
+      t.string :imei
       t.string :motdepass
       t.string :panne
       t.text :remarque
