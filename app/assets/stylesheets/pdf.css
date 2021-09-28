@@ -73,7 +73,7 @@ hr {
     text-align: center;
     width: 50%;
     margin: auto;
-    font-size: 23px;
+    font-size: 28px;
 }
 
 .middle p {
@@ -87,7 +87,7 @@ hr {
     text-align: center;
     width: 50%;
     margin: 10px auto;
-    font-size: 23px;
+    font-size: 28px;
 }
 
 .end p {
@@ -140,7 +140,7 @@ hr {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 28px;
 }
 
 
@@ -158,6 +158,6 @@ hr {
     margin-right: 5%;
     margin-top: 10px;
     border-radius: 16px;
-    font-size: 22px;
+    font-size: 28px;
 
 }
