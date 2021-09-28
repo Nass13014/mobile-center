@@ -73,7 +73,7 @@ hr {
     text-align: center;
     width: 50%;
     margin: auto;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .middle p {
@@ -87,7 +87,7 @@ hr {
     text-align: center;
     width: 50%;
     margin: 10px auto;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .end p {
@@ -138,9 +138,9 @@ hr {
 .toto2 {
     width: 100%;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 20px;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 
@@ -158,6 +158,6 @@ hr {
     margin-right: 5%;
     margin-top: 30px;
     border-radius: 16px;
-    font-size: 23px;
+    font-size: 22px;
 
 }
