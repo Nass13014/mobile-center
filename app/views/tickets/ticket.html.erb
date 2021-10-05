@@ -159,7 +159,22 @@ h3 {
 
 <p>
   <strong>Total à payer:</strong>
-    <%= @ticket.total - @ticket.accompte - @ticket.reduction %> €
+
+   <% if @ticket.reduction == nil %>
+
+   <% @ticket.reduction == 0 
+      
+   %>
+
+   <% elsif @ticket.accompte == nil  %>
+
+   <% @ticket.accompte == 0  %>
+
+   <% end %>
+
+   <%= @ticket.total + @ticket.accompte + @ticket.reduction%>
+
+
 </p>
  <hr>
 
