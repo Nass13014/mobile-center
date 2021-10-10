@@ -1,3 +1,5 @@
+<% if admin_signed_in?  %>
+
 <p id="notice"><%= notice %></p>
 
 <style>
@@ -69,3 +71,10 @@ td {
 <br>
 
 <%= link_to 'Créer un nouveau ticket', new_ticket_path, class: "btn btn-danger", style: "background-color:#ff0066" %>
+
+
+<% else  %>
+
+<h2>Vous n'avez pas accès à cette page veuillez vous connecter. </h2>
+
+<% end %>

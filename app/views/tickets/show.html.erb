@@ -1,4 +1,4 @@
-
+<% if admin_signed_in? %>
 
 <p id="notice"><%= notice %></p>
 
@@ -96,8 +96,11 @@
 <%= link_to 'Modifier', edit_ticket_path(@ticket), class: "btn btn-danger text-white m-2", style: "background-color: rgba(178,29,94);"  %> 
 <%= link_to 'Retour', tickets_path, class: "btn btn-danger text-white m-2", style: "background-color: rgba(178,29,94);"  %>
 <%= link_to "PDF", ticket_path(format: :pdf), class: "btn btn-danger text-white m-2", style: "background-color: rgba(178,29,94);"  %>
+<% else %>
 
+<h2> Vous n'êtes pas connecté et n'avez pas les droits d'accès à cette page ! veuillez vous connecter. </h2>
 
+<% end %>
 
 
 
